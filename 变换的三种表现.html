@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   <style>
+   
+   * {
+       margin: 0;
+       padding: 0;
+   }
+
+   ul {
+
+       list-style: none;
+       text-align: center;
+       perspective: 500px;
+       margin: 10px auto;
+   }
+
+   li {
+       display: inline-block;
+       width: 200px;
+       height: 300px;
+       margin: 10px;
+       transform-style: preserve-3d;
+       transition: all 1s;
+       background-color: beige;
+       background: url("./img/28.jpg") no-repeat left top / 100% 100%;
+   }
+
+   li:nth-child(1):hover {
+
+       transform: translateZ(30px);
+       background-color: aqua;
+   }
+
+   li:nth-child(2):hover {
+
+       transform-origin: left;
+       transform: rotateY(45deg);
+       background-color: blueviolet;
+   }
+
+   li:nth-child(3):hover{
+
+       transform-origin: top;
+       transform: rotateX(45deg);
+       background-color: gray;
+   }
+   </style>
+</head>
+<body>
+   <ul>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+   </ul>
+</body>
+</html>
